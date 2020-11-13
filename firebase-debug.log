@@ -1,0 +1,67 @@
+[debug] [2020-11-12T16:48:57.228Z] ----------------------------------------------------------------------
+[debug] [2020-11-12T16:48:57.230Z] Command:       /usr/bin/node /usr/local/bin/firebase init
+[debug] [2020-11-12T16:48:57.230Z] CLI Version:   8.16.0
+[debug] [2020-11-12T16:48:57.231Z] Platform:      linux
+[debug] [2020-11-12T16:48:57.231Z] Node Version:  v10.19.0
+[debug] [2020-11-12T16:48:57.231Z] Time:          Thu Nov 12 2020 23:48:57 GMT+0700 (Indochina Time)
+[debug] [2020-11-12T16:48:57.231Z] ----------------------------------------------------------------------
+[debug] [2020-11-12T16:48:57.231Z] 
+[debug] [2020-11-12T16:48:57.235Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-12T16:48:57.236Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/huy/Desktop/Project-Share-Stories
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-11-12T16:49:05.617Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-11-12T16:49:06.571Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 12 Nov 2020 16:49:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project ci-52-34472 (CI 52) 
+[info] 
+=== Firestore Setup
+[debug] [2020-11-12T16:49:07.493Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/ci-52-34472/services/firestore.googleapis.com  
+ 
+[debug] [2020-11-12T16:49:09.072Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 12 Nov 2020 16:49:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-12T16:49:09.075Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/ci-52-34472  
+ 
+[debug] [2020-11-12T16:49:09.732Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 12 Nov 2020 16:49:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-12T16:49:09.733Z] database_type: CLOUD_FIRESTORE
+[debug] [2020-11-12T16:49:09.735Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-12T16:49:09.736Z] > authorizing via signed-in user
+[debug] [2020-11-12T16:49:09.736Z] [iam] checking project ci-52-34472 for permissions ["firebase.projects.get"]
+[debug] [2020-11-12T16:49:09.738Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ci-52-34472:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-11-12T16:49:10.864Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 12 Nov 2020 16:49:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=811","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2020-11-12T16:49:31.418Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/ci-52-34472/releases?pageSize=10&pageToken=  
+ 
+[debug] [2020-11-12T16:49:32.748Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 12 Nov 2020 16:49:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-12T16:49:32.749Z] Found ruleset: projects/ci-52-34472/rulesets/cd9011c0-81be-479a-ad97-c7c3ecd3f604
+[debug] [2020-11-12T16:49:32.750Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/ci-52-34472/rulesets/cd9011c0-81be-479a-ad97-c7c3ecd3f604  
+ 
+[debug] [2020-11-12T16:49:33.905Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 12 Nov 2020 16:49:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-12T16:49:34.102Z] Error: EISDIR: illegal operation on a directory, open '/home/huy/Desktop/Project-Share-Stories'
+    at Object.openSync (fs.js:443:3)
+    at Object.writeFileSync (fs.js:1194:35)
+    at Config.writeProjectFile (/usr/local/lib/node_modules/firebase-tools/lib/config.js:156:8)
+    at getRulesFromConsole.then (/usr/local/lib/node_modules/firebase-tools/lib/init/features/firestore/rules.js:50:27)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
