@@ -49,6 +49,7 @@ let btnClick = async (event) => {
        
     } else {
          alert("Đăng nhập thành công");
+         window.open("home.html")
     }
     // let result = await firebase
     //   .firestore()
