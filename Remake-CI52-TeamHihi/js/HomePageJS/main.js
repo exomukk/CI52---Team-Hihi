@@ -1,3 +1,5 @@
+import {auth} from "../LoginJS/utils.js"
+
 (function ($) {
 	"use strict";
 	
@@ -162,9 +164,20 @@
 	/*----------------------------
     START - Preloader
     ------------------------------ */
-	jQuery(window).load(function(){
-		jQuery("#preloader").delay(1500).fadeOut(500);
-	});
+	$(window).load(function(){
+		$('body').css("overflow","hidden");
+		$("#preloader").delay(1500).fadeOut(500, function(){ $('body').css("overflow","auto")});
 	
+	});
 
+	if(auth()) {
+		$('#name').html(`<div data-toggle="tooltip" data-placement="bottom" title="Sign Out">${(JSON.parse(localStorage.getItem('current-user'))).email}</div>`)
+		$('#name').click(function() {
+			localStorage.removeItem('current-user')
+		})
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		  })
+	}
+		
 }(jQuery));
