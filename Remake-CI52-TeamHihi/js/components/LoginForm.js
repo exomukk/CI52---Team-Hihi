@@ -7,10 +7,8 @@ $templateLogin.innerHTML = /*html*/ `
 <!--===============================================================================================-->
 <link rel="icon" type="image/png" href="../images/Login-IMG/icons/favicon.ico" />
 <!--===============================================================================================-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../fonts/LoginPage-Fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="../css/vendor/animate/animate.css">
 <!--===============================================================================================-->
@@ -88,8 +86,9 @@ class LoginForm extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
+    
     this.shadowRoot.appendChild($templateLogin.content.cloneNode(true));
-
+    
     this.$formLogin = this.shadowRoot.getElementById("form-login");
     this.$email = this.shadowRoot.querySelector("#email");
     this.$password = this.shadowRoot.getElementById("pass");
