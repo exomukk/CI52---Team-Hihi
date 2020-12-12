@@ -46,7 +46,7 @@ $templateNavbar.innerHTML = /*html*/ `
                 <ul id="primary-menu">
                     <li><a class="active" href="home.html">Home</a></li>
                     <li><a href="movies.html">Movies</a></li>
-                    <li><a href="celebrities.html">CelebritiesList</a></li>
+                    <li><a href="celebrities.html">Creators</a></li>
                     <li><a href="top-movies.html">Top Movies</a></li>
                     <li><a href="blog.html">News</a></li>
                     <li><a href="#">Pages <i class="icofont icofont-simple-down"></i></a>
