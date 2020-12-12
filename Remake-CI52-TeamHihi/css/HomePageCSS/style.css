@@ -780,7 +780,7 @@ hr {
 ------------------------------------*/
 .breadcrumb-area {
     position: relative;
-    background-image: url('../img/breadcrumb.png');
+    background-image: url('../../images/HomePagesIMG/breadcrumb.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
