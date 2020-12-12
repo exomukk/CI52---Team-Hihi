@@ -367,7 +367,7 @@ option {
 	color: #000;
 }
 .header-right form select {
-    background: url('../img/HomePagesIMG/select-icon.png') no-repeat right center;
+    background: url('../../images/HomePagesIMG/select-icon.png') no-repeat right center;
     color: #fff;
     padding: 0 20px 0 30px;
     border: none;
@@ -403,7 +403,7 @@ option {
 ------------------------------------*/
 .hero-area {
     position: relative;
-    background-image: url('../img/hero-area.png');
+    background-image: url('../../images/HomePagesIMG/hero-area.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -659,15 +659,15 @@ hr {
     right: 420px;
 }
 .news-bg-1 {
-	background: url('../img/news/news1.jpg') no-repeat center / cover;
+	background: url('../../images/HomePagesIMG/news/news1.jpg') no-repeat center / cover;
     height: 350px;
 }
 .news-bg-2 {
-	background: url('../img/news/news2.jpg') no-repeat center / cover;
+	background: url('../../images/HomePagesIMG/news/news2.jpg') no-repeat center / cover;
     height: 350px;
 }
 .news-bg-3 {
-	background: url('../img/news/news3.jpg') no-repeat center / cover;
+	background: url('../../images/HomePagesIMG/news/news3.jpg') no-repeat center / cover;
     height: 350px;
 }
 .news-date {
@@ -728,7 +728,7 @@ hr {
 --------- footer AREA CSS START --------
 -----------------------------------*/
 .footer {
-	background: url('../img/footer-bg.png') no-repeat bottom center / cover;
+	background: url('../../images/HomePagesIMG/footer-bg.png') no-repeat bottom center / cover;
     position: relative;
 	padding: 90px 0 30px;
 }
