@@ -1,15 +1,14 @@
 import { validateEmail } from "../LoginJS/validateEmail.js";
 import { showValidate, hideValidate } from "../LoginJS/toggleValidate.js";
-import {md5, makeAuth, getDataFromDoc} from "../LoginJS/utils.js"
-
-
+import { md5, makeAuth, getDataFromDoc } from "../LoginJS/utils.js";
 
 const $templateLogin = document.createElement("template");
 $templateLogin.innerHTML = /*html*/ `
 <!--===============================================================================================-->
 <link rel="icon" type="image/png" href="../images/Login-IMG/icons/favicon.ico" />
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../css/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="../fonts/LoginPage-Fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
@@ -23,20 +22,7 @@ $templateLogin.innerHTML = /*html*/ `
 <link rel="stylesheet" type="text/css" href="../css/Login-CSS/main.css">
 <!--===============================================================================================-->
 
-	<!--===============================================================================================-->
-	<script src="../css/vendor/bootstrap/js/popper.js"></script>
-	<script src="../css/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="../css/vendor/select2/select2.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="../css/vendor/tilt/tilt.jquery.min.js"></script>
-	<script>
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-	<!--===============================================================================================-->
-	<script src="../js/LoginJS/main.js"></script>
+
 <div class="limiter">
 		<div class="container-login100" style="padding-top:10%;">			
 			<div class="wrap-login100">
@@ -83,7 +69,20 @@ $templateLogin.innerHTML = /*html*/ `
 		</div>
     </div>
     
-    
+    	<!--===============================================================================================-->
+	<script src="../css/vendor/bootstrap/js/popper.js"></script>
+	<script src="../css/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../css/vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../css/vendor/tilt/tilt.jquery.min.js"></script>
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	<!--===============================================================================================-->
+	<script src="../js/LoginJS/main.js"></script>
     `;
 class LoginForm extends HTMLElement {
   constructor() {
@@ -92,9 +91,9 @@ class LoginForm extends HTMLElement {
     this.shadowRoot.appendChild($templateLogin.content.cloneNode(true));
 
     this.$formLogin = this.shadowRoot.getElementById("form-login");
-    this.$email = this.shadowRoot.querySelector('#email')
+    this.$email = this.shadowRoot.querySelector("#email");
     this.$password = this.shadowRoot.getElementById("pass");
-    this.$regisLink = this.shadowRoot.getElementById('register_link');
+    this.$regisLink = this.shadowRoot.getElementById("register_link");
   }
 
   connectedCallback() {
@@ -145,17 +144,16 @@ class LoginForm extends HTMLElement {
         if (result.empty) {
           alert("Email hoặc mật khẩu không chính xác");
         } else {
-          alert("Đăng nhập thành công");
-          makeAuth(getDataFromDoc(result.docs[0], ['password']))
-          window.open('./home.html','_self')
+          makeAuth(getDataFromDoc(result.docs[0], ["password"]));
+          window.open("./home.html", "_self");
         }
       }
     };
-    this.$regisLink.onclick = function(event) {
+    this.$regisLink.onclick = function (event) {
       event.preventDefault();
-      console.log("click")
-      router.navigate('/sign-up')
-    }
+      console.log("click");
+      router.navigate("/sign-up");
+    };
   }
 }
 
