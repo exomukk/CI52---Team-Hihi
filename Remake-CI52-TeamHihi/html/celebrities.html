@@ -44,8 +44,7 @@
 					<form action="#">
 						<select>
 							<option value="Movies">Movies</option>
-							<option value="Movies">News</option>
-							<option value="Movies">Actor</option>
+							
 						</select>
 						<input type="text" />
 						<button><i class="icofont icofont-search"></i></button>
@@ -63,12 +62,7 @@
 							<li><a id="movies-page" href="#">Movies</a></li>
 							<li><a href="celebrities.html" class="active">Creators</a></li>
 							<li><a href="blog.html">News</a></li>
-							<li><a href="#">Pages <i class="icofont icofont-simple-down"></i></a>
-								<ul>
-									<li><a href="blog-details.html">Blog Details</a></li>
-									<li><a href="movie-details.html">Movie Details</a></li>
-								</ul>
-							</li>
+							
 						</ul>
 					</div>
 				</div>
@@ -77,12 +71,11 @@
 	</header>
 	<!-- header section end -->
 	<!-- breadcrumb area start -->
-	<section class="breadcrumb-area">
+	<section class="breadcrumb-area-creator">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="breadcrumb-area-content">
-						<h1>Creators Page</h1>
 					</div>
 				</div>
 			</div>
@@ -233,69 +226,28 @@
 				<div class="col-lg-9">
 					<div class="details-content">
 						<div class="details-overview">
-							<h2>Overview</h2>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore quod, aliquid
-								quibusdam earum debitis inventore dicta dolores eaque ratione illum voluptas accusantium
-								itaque pariatur qui porro asperiores esse quasi?</p>
+							
 						</div>
 						<div class="details-reply">
 							<h2>Leave a Feedback</h2>
 							<form action="#">
 								<div class="row">
-									<!-- <div class="col-lg-4">
-											<div class="select-container">
-												<input type="text" placeholder="Name"/>
-												<i class="icofont icofont-ui-user"></i>
-											</div>
-										</div>
-										<div class="col-lg-4">
-											<div class="select-container">
-												<input type="text" placeholder="Email"/>
-												<i class="icofont icofont-envelope"></i>
-											</div>
-										</div>
-										<div class="col-lg-4">
-											<div class="select-container">
-												<input type="text" placeholder="Phone"/>
-												<i class="icofont icofont-phone"></i>
-											</div>
-										</div> -->
+									
 									<div class="col-lg-12">
 										<div class="textarea-container">
-											<textarea placeholder="Type Here Message"
+											<textarea id="input" placeholder="Type Here Message"
 												style="background-color: #24262d;"></textarea>
-											<!-- <button><i class="icofont icofont-send-mail"></i></button> -->
 										</div>
 									</div>
 								</div>
 							</form>
 						</div>
 						<div class="details-comment">
-							<a class="theme-btn theme-btn2" href="#">Post Comment</a>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reiciendis maxime,
-								quaerat laborum non.</p>
+							<a class="theme-btn theme-btn2" id="submit" href="#">Post Comment</a>
+							
 						</div>
-						<!-- <div class="details-thumb">
-								<div class="details-thumb-prev">
-									<div class="thumb-icon">
-										<i class="icofont icofont-simple-left"></i>
-									</div>
-									<div class="thumb-text">
-										<h4>Previous Post</h4>
-										<p>Standard Post With Gallery</p>
-									</div>
-								</div>
-								<div class="details-thumb-next">
-									<div class="thumb-text">
-										<h4>Next Post</h4>
-										<p>Standard Post With Preview Image</p>
-									</div>
-									<div class="thumb-icon">
-										<i class="icofont icofont-simple-right"></i>
-									</div>
-								</div>
-							</div> -->
 					</div>
+					<div id="comment"></div>
 				</div>
 				<div class="col-lg-3 text-center text-lg-left">
 					<div class="portfolio-sidebar">
@@ -358,7 +310,6 @@
 				<div class="row">
 					<div class="col-lg-6 text-center text-lg-left">
 						<div class="copyright-content">
-							<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
 						</div>
 					</div>
 					<div class="col-lg-6 text-center text-lg-right">

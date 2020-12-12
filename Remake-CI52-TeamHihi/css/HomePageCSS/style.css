@@ -403,7 +403,7 @@ option {
 ------------------------------------*/
 .hero-area {
     position: relative;
-    background-image: url('../../images/HomePagesIMG/hero-area.png');
+    background-image: url('https://images4.alphacoders.com/969/thumb-1920-969581.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -780,7 +780,15 @@ hr {
 ------------------------------------*/
 .breadcrumb-area {
     position: relative;
-    background-image: url('../../images/HomePagesIMG/breadcrumb.png');
+    background-image: url('https://media.giphy.com/media/3ov9k1J6jahVhiev0Q/giphy.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	padding: 280px 0 200px;
+}
+.breadcrumb-area-creator {
+    position: relative;
+    background-image: url('https://i.pinimg.com/originals/fc/d2/c4/fcd2c4d030f06f050ec733db0121cb4e.gif');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
