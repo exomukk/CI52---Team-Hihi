@@ -171,7 +171,7 @@ import {auth} from "../LoginJS/utils.js"
 	});
 
 	if(auth()) {
-		$('#name').html(`<div data-toggle="tooltip" data-placement="bottom" title="Sign Out">${(JSON.parse(localStorage.getItem('current-user'))).email}</div>`)
+		$('#name').html(`<div class="btn" data-toggle="tooltip" data-placement="bottom" title="Sign Out">${(JSON.parse(localStorage.getItem('current-user'))).email}</div>`)
 		$('#name').click(function() {
 			localStorage.removeItem('current-user')
 		})
