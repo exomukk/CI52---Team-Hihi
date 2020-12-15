@@ -1,5 +1,6 @@
 import { validateEmail } from "../LoginJS/validateEmail.js";
 import { showValidate, hideValidate } from "../LoginJS/toggleValidate.js";
+import { getDataFromDoc, makeAuth } from "../LoginJS/utils.js";
 
 const $templateRegis = document.createElement('template')
 $templateRegis.innerHTML = /*html*/ `
@@ -147,6 +148,7 @@ class RegisterForm extends HTMLElement {
                     });
 
                     alert("Đăng kí tài khoản thành công");
+                    window.open("./home.html", "_self");
                 } else {
                     alert("Email " + this.$email + " đã có người sử dụng!");
                 }

@@ -9,3 +9,6 @@ export function hideValidate(input) {
 
         $(thisAlert).removeClass('alert-validate');
     }
+
+
+// Alert validate email template
