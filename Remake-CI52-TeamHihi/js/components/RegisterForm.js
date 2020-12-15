@@ -147,8 +147,9 @@ class RegisterForm extends HTMLElement {
                     });
 
                     alert("Đăng kí tài khoản thành công");
+                    window.open('./login-register.html#/sign-in')
                 } else {
-                    alert("Email " + this.$email + " đã có người sử dụng!");
+                    alert("Email " + this.$email.value + " đã có người sử dụng!");
                 }
 
             }
