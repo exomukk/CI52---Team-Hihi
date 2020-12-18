@@ -2,11 +2,12 @@ const $templateNavbar = document.createElement("template");
 
 
 $templateNavbar.innerHTML = /*html*/ `
+<!-- Favicon Icon -->
 <link rel="icon" type="image/png" href="../images/HomePagesIMG/favcion.png" />
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" type="text/css" href="../css/HomePageCSS/bootstrap.min.css" media="all" />
 <!-- Iconfont CSS -->
-<link rel="stylesheet" type="text/css" href="../css/HomePageCSS/icofont.css" />
+<link rel="stylesheet" type="text/css" href="../css/HomePageCSS/icofont.css" media="all" />
 <!-- Popup CSS -->
 <link rel="stylesheet" type="text/css" href="../css/HomePageCSS/magnific-popup.css">
 <!-- Owl carousel CSS -->
@@ -15,6 +16,7 @@ $templateNavbar.innerHTML = /*html*/ `
 <link rel="stylesheet" type="text/css" href="../css/HomePageCSS/responsive.css" media="all">
 <!-- Slick nav CSS -->
 <link rel="stylesheet" type="text/css" href="../css/HomePageCSS/slicknav.min.css" media="all" />
+
 <!-- Style Main CSS -->
 <link rel="stylesheet" type="text/css" href="../css/HomePageCSS/style.css" media="all" />
 
